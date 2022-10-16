@@ -59,6 +59,7 @@
 		430500C928FC789E008D0E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		430500D328FC78AA008D0E5B /* TextWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TextWidgetExtension.entitlements; sourceTree = "<group>"; };
 		430500D428FC78E7008D0E5B /* SwiftUIWidgetExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIWidgetExample.entitlements; sourceTree = "<group>"; };
+		430500D528FC834F008D0E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +105,7 @@
 		430500AA28FC76CE008D0E5B /* SwiftUIWidgetExample */ = {
 			isa = PBXGroup;
 			children = (
+				430500D528FC834F008D0E5B /* Info.plist */,
 				430500D428FC78E7008D0E5B /* SwiftUIWidgetExample.entitlements */,
 				430500AB28FC76CE008D0E5B /* SwiftUIWidgetExampleApp.swift */,
 				430500AD28FC76CE008D0E5B /* ContentView.swift */,
@@ -395,6 +397,7 @@
 				DEVELOPMENT_TEAM = 97MHK6W334;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIWidgetExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -426,6 +429,7 @@
 				DEVELOPMENT_TEAM = 97MHK6W334;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIWidgetExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

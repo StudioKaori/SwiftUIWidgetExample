@@ -17,7 +17,7 @@ struct ContentView: View {
 			
 			Text("Input Text: \(self.displayText)")
 			
-			Spacer()
+			Divider()
 			
 			TextField("Type something...", text: $inputText)
 			
