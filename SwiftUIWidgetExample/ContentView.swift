@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct ContentView: View {
 	@State var inputText: String = ""
@@ -21,7 +22,14 @@ struct ContentView: View {
 			TextField("Type something...", text: $inputText)
 			
 			Button("Save", action: {
-				UserDefaults.standard.setValue(self.inputText, forKey: "text")
+				let userDefaults = UserDefaults(suiteName: "group.textWidgetCache")
+				if let userDefaults = userDefaults {
+					userDefaults.synchronize()
+					userDefaults.setValue(inputText, forKey: "text")
+				}
+				// reload the widget immediately
+				WidgetCenter.shared.reloadAllTimelines()
+				
 				self.displayText = self.inputText
 				self.inputText = ""
 			})
