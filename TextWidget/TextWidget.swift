@@ -44,7 +44,13 @@ struct TextWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+			ZStack {
+				Image("background")
+					.resizable()
+					.aspectRatio(contentMode: .fill)
+				
+				Text(entry.date, style: .time)
+			}
     }
 }
 
